@@ -3,9 +3,9 @@ services:
     www:
         build: .
         ports: 
-            - "80:80"
+            - "8001:80"
         volumes:
-            - ./src/var/www/html/
+            - ./src:/var/www/html/
         links:
             - db
         networks:
